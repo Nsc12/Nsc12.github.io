@@ -21,9 +21,24 @@ body {
     border-style: double;
 
 }
-div#presentation div.centerbox p{
-    color: white;
-}
+div#presentation div.centerbox p { color: white;
+	animation-duration: 15s;
+	animation-name: glissement;
+	/* animation-iteration-count: infinite; */
+  }
+  @keyframes glissement {
+	from {
+	  margin-left: 100%;
+	  width: 300%;
+	}
+  
+	to {
+	  margin-left: 0%;
+	  width: 100%;
+	}
+  }
+   
+
 div#experience div.onebox h2, li, ul, u
 {
 	color: black;
@@ -123,11 +138,11 @@ footer {
 		position: absolute;
 		top: 0; left: 0;
 		margin: 2px;
-		background-color: red;
+		background-color:moccasin;
 	}
 	@media screen and (max-width: 700px){
 		header {
-			background-color: rgba(255, 0, 0, 0.174);
+			background-color: rgba(255, 228, 181, 0.301);
 			font-size: 100%
 	}
 }

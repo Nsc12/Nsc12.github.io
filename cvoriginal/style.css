@@ -1,0 +1,148 @@
+div#wrapper {
+	font-size: 2.0rem;;
+	text-shadow: 5px 30px 5px rgba(255, 228, 181, 0.453);
+	
+}
+h3 {
+	font-size: 1.5rem;
+	box-shadow: 5px;
+	text-shadow : 5px 13px 5px rgba(0,0,0,0.61);
+}
+body {
+    font-size: 1rem sans-serif;
+    background:url(images/office1.jpg) center/cover;
+	height: 100vh;
+}
+
+   div#presentation div.centerbox {
+	font-size: 1.4em;
+    background-color:rgba(0, 0, 0, 0.455);
+    border-radius: 5px;
+    border-style: double;
+
+}
+div#presentation div.centerbox p { color: white;
+	animation-duration: 15s;
+	animation-name: glissement;
+	/* animation-iteration-count: infinite; */
+  }
+  @keyframes glissement {
+	from {
+	  margin-left: 100%;
+	  width: 300%;
+	}
+  
+	to {
+	  margin-left: 0%;
+	  width: 100%;
+	}
+  }
+   
+
+div#experience div.onebox h2, li, ul, u
+{
+	color: black;
+}
+
+div#experience div.onebox {
+	font-size: 1.4em;
+    text-align: center;
+    border-radius: 5px;
+	border:solid;
+	box-shadow: 4px 4px; color: moccasin;
+	vertical-align: top;
+	background-color: rgba(135, 207, 235, 0.208);
+}
+div#competences div.twobox {
+	font-size: 1.4em;
+	padding: 10px;
+	margin: 50px;
+    background-color: rgba(127, 255, 212, 0.23);
+    border-radius: 20px;
+}
+ul,li {
+    list-style: none;}
+
+    /* Animations des lettres */
+
+    h1,h3 {
+        color: white;
+    }
+h1 span {opacity:0;}
+.letter01 {animation:letters 3s ease 0000ms forwards;}
+.letter02 {animation:letters 3s ease 0500ms forwards;}
+.letter03 {animation:letters 3s ease 1000ms forwards;}
+.letter04 {animation:letters 3s ease 1500ms forwards;}
+.letter05 {animation:letters 3s ease 2000ms forwards;}
+.letter06 {}
+.letter07 {animation:letters 3s ease 3000ms forwards;}
+.letter08 {animation:letters 3s ease 3500ms forwards;}
+.letter09 {animation:letters 3s ease 4000ms forwards;}
+.letter10 {animation:letters 3s ease 4500ms forwards;}
+@keyframes letters {
+    0% {opacity:0;}
+    100% {opacity:1.0;}
+  }
+  
+.animated-link {
+	display: inline-block;
+	background: black;
+	border-radius: 5px;
+	text-decoration: none;
+
+}
+.animated-link span {
+	display: inline-block;
+	background:moccasin;
+	color:black ;
+	border: 1px solid black;
+	padding: 18px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition:
+	transform 0.15s ease-out,
+	color 0.15s ease-out,
+	background-color 0.15s ease-out;
+
+}
+.animated-link:hover span {
+transform: translate(-12px, -12px);
+color: black;
+background:chartreuse;
+
+}
+
+
+
+h4 {
+ 	font-size: 1.4rem;
+
+}
+
+
+footer {
+	font-size: 1.5rem;
+
+	color: moccasin;
+}
+
+/* RESPONSIVE */
+
+
+@media screen and (max-width: 700px){
+
+}
+	body {
+		width: 100%;
+		height: 200px;
+		position: absolute;
+		top: 0; left: 0;
+		margin: 2px;
+		background-color:moccasin;
+	}
+	@media screen and (max-width: 700px){
+		header {
+			background-color: rgba(255, 228, 181, 0.301);
+			font-size: 100%
+	}
+}
